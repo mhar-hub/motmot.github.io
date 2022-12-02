@@ -1,0 +1,189 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    top:0;
+}
+p{
+    margin: 0;
+    top: 0;
+    letter-spacing: 0px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 10px;
+    line-height: 7px;
+    text-align: justify;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background: url(./2y.jpg) no-repeat center /cover;
+    background-attachment: fixed;
+    -webkit-background-clip: text;
+    -webkit-text-fill-center: rgb(255, 255, 255, 0);
+}
+.float2,
+.float {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #fff;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+}
+a .my-float,
+a .my-float {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 11px;
+    color: #221f1f;
+}
+.float2{
+    bottom: 90px;
+    right: 40px;
+}
+.float2:hover,
+.float:hover{
+    background-color: #221f1f;
+    transition: 300ms;
+}
+a .my-float:hover,
+a .my-float:hover {
+    color: #58cced;
+    transition: 300ms;
+}
+
+/* popup */
+/* Popup container - can be anything you want */
+.popup {
+    position: fixed;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    bottom: 180px;
+    right: 20px;
+}
+
+/* The actual popup */
+.popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #58cced ;
+    color: #fff;
+    text-align: center;
+    border-radius: 16px;
+    padding: 8px 0;
+    position: fixed;
+    z-index: 1;
+    margin-left: -180px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 85%;
+    margin-left: -4px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #58cced transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+.letter{
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: justify;
+}
+.outerbox{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    background-color: #fff;
+    width: 80%;
+    border-radius: 16px;
+    height: 200px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    text-align: center;
+}
+.box input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 40px;
+    text-align: center;
+    border: none;
+    background-color: rgb(238, 238, 238);
+    padding-block: 5px;
+    border-radius: 16px;
+}
+.but{
+    border: none;
+    background-color: #58cced;
+    padding-inline: 1em;
+    margin-top: 1em;
+    border-radius: 16px;
+    color: white;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+span{
+    color: rgb(255, 102, 102);
+}
+@media only screen and (min-width: 425px) {
+    .box {
+        width: 70%;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .box {
+        width: 40%;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    .box {
+        width: 20%;
+    }
+}
+@media only screen and (min-width: 1440px) {
+    .box {
+        width: 20%;
+    }
+}
